@@ -1,7 +1,7 @@
 .App {
   text-align: center;
+  margin: 20px;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,7 +27,12 @@
 .App-link {
   color: #61dafb;
 }
-
+.react-datepicker__input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border: none !important;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +41,23 @@
     transform: rotate(360deg);
   }
 }
+
+/* AntsDatePicker.css */
+.ants-date-picker {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 14px;
+  height: 23px;
+  line-height: 1.4;
+  padding: 4px 11px;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.ants-date-picker:focus {
+  border-color: #40a9ff;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
